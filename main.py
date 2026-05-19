@@ -1,3 +1,5 @@
+import os
+import threading
 import config
 import time
 import logging
@@ -27,6 +29,21 @@ app = Client(
     plugins=dict(root="CINDERELLA"),
 )
 
+# ─── Flask keep-alive server for Render ───────────────────────────────────────
+flask_app = Flask(__name__)
+
+@flask_app.route('/')
+def index():
+    return 'Bot is running!'
+
+def run_flask():
+    port = int(os.environ.get("PORT", 8000))
+    flask_app.run(host="0.0.0.0", port=port)
+
+# Start Flask in background thread so Render detects open port
+threading.Thread(target=run_flask, daemon=True).start()
+# ─────────────────────────────────────────
+
 if __name__ == "__main__":
     print("𝐂𝐢𝐧𝐝𝐞𝐫𝐞𝐥𝐥𝐚 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐆𝐞𝐧 𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠....")
     try:
@@ -45,20 +62,5 @@ if __name__ == "__main__":
     print(f"@{uname} NOW CINDERELLA SESSION GEN IS READY TO GEN SESSION")
     
     idle()
-    # ─── Flask keep-alive server for Render ───────────────────────────────────────
-flask_app = Flask(name)
-
-@flask_app.route('/')
-def index():
-    return 'Bot is running!'
-
-def run_flask():
-    port = int(os.environ.get("PORT", 8000))
-    flask_app.run(host="0.0.0.0", port=port)
-
-# Start Flask in background thread so Render detects open port
-threading.Thread(target=run_flask, daemon=True).start()
-# ─────────────────────────────────────────
-
     app.stop()
     print("𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐧𝐠 𝐒𝐭𝐨𝐩𝐩...")
