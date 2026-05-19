@@ -32,7 +32,7 @@ async def start(bot: Client, msg: Message):
                 ],
                 [
                     InlineKeyboardButton("🔸 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 🔸", url="https://t.me/CinderellaContactBot"),
-                    InlineKeyboardButton("▫️𝐏𝐃𝐅 𝐫𝐞𝐧𝐚𝐦𝐞▫️", url="https://t.me/Cinderella_renameBot")
+                    InlineKeyboardButton("▫️𝐑𝐞𝐧𝐚𝐦𝐞 𝐁𝐨𝐭▫️", url="https://t.me/Cinderella_renameBot")
                 ]                
             ]
         )
