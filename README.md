@@ -1,4 +1,4 @@
-Premium Account String Generator.
+𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐒𝐭𝐫𝐢𝐧𝐠 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫.
 
 
-you can deploy on Render & Heruko this Repo Fill Config.py file only.
+𝐲𝐨𝐮 𝐜𝐚𝐧 𝐝𝐞𝐩𝐥𝐨𝐲 𝐨𝐧 𝐑𝐞𝐧𝐝𝐞𝐫 & 𝐇𝐞𝐫𝐮𝐤𝐨 𝐭𝐡𝐢𝐬 𝐑𝐞𝐩𝐨 𝐅𝐢𝐥𝐥 𝐂𝐨𝐧𝐟𝐢𝐠.𝐩𝐲 𝐟𝐢𝐥𝐞 𝐨𝐧𝐥𝐲.
