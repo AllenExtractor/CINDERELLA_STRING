@@ -1,0 +1,42 @@
+{
+  "name": "♐𝗖𝗶𝗻𝗱𝗲𝗿𝗲𝗹𝗹𝗮 𝗦𝘁𝗿𝗶𝗻𝗴 𝗕𝗼𝘁♐",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://graph.org/file/3f0529e0a232d7a076a60-998260a13c34d2b7ea.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather",
+            "required": true
+        },  
+        "MUST_JOIN": {
+            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "required": true      
+        }, 
+        "MONGO_URL": {
+            "description": "mongo db url here",
+            "required": true
+        },
+        "API_ID": {
+            "description": "telegram api id here",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Telegram id of the person who will known as owner of the bot.",
+            "required": true
+        }, 
+        "API_HASH": {
+            "description": "telegram api hash here",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
