@@ -34,7 +34,7 @@ flask_app = Flask(__name__)
 
 @flask_app.route('/')
 def index():
-    return 'Bot is running!'
+    return 'Bot is running.!'
 
 def run_flask():
     port = int(os.environ.get("PORT", 8000))
